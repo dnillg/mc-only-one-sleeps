@@ -1,0 +1,5 @@
+name: solo-sleep
+version: 1.0.0-SNAPSHOT
+author: Daniel Giczi
+main: com.dgiczi.mc.solosleep.SoloSleep
+api-version: 1.14
