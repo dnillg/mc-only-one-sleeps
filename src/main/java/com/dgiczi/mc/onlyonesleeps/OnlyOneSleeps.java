@@ -1,4 +1,4 @@
-package com.dgiczi.mc.solosleep;
+package com.dgiczi.mc.onlyonesleeps;
 
 import org.bukkit.Server;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
-public class SoloSleep extends JavaPlugin {
+public class OnlyOneSleeps extends JavaPlugin {
 
     @Override
     public void onEnable() {
@@ -19,13 +19,13 @@ public class SoloSleep extends JavaPlugin {
         saveConfig();
 
         server.getPluginManager().registerEvents(listener, this);
-        logger.info("solo-sleep enabled...");
+        logger.info("only-one-sleeps enabled...");
         super.onEnable();
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("solo-sleep disabled...");
+        getLogger().info("only-one-sleeps disabled...");
         super.onDisable();
     }
 
@@ -35,5 +35,6 @@ public class SoloSleep extends JavaPlugin {
         config.addDefault("change.weather.enabled", true);
         config.addDefault("change.time.enabled", true);
         config.addDefault("change.time.value", 0);
+        config.addDefault("permissions.enabled", 0);
     }
 }
