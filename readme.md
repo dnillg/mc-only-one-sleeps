@@ -6,6 +6,9 @@ Lightweight solution for making mornings by one player in community servers
 Supports permissions
 Source code available
 
+### Permission nodes
+ - only-one-sleeps.use
+
 #### Configuration nodes and default values:
 ```yaml
 permissions:
